@@ -21,7 +21,6 @@ start:
 		const int n = 50;
 		int a[n];
 		double average = 0;
-		int temp = 0;
 		int sum = 0;
 		int size = 0;
 
@@ -74,16 +73,12 @@ start:
 					{
 						swap(a[i], a[i + 1]);
 					}
-
 				}
-
 			}
-
-			for (int i = part1; i < size/2; i++)
+			for (int i = part1; i < size / 2; i++)
 			{
-				swap(a[i], a[size-i+1]);
+				swap(a[i], a[size - i - 1]);
 			}
-
 
 			for (int i = 0; i < size; i++)
 			{
@@ -91,9 +86,6 @@ start:
 			}
 			cout << endl;
 		}
-
-
-
 	}
 
 
