@@ -74,13 +74,16 @@ start:
 					{
 						swap(a[i], a[i + 1]);
 					}
-				}				
+
+				}
+
 			}
+
 			for (int i = part1; i < size/2; i++)
 			{
-
-				swap(a[i], a[size-1-i]);
+				swap(a[i], a[size-i+1]);
 			}
+
 
 			for (int i = 0; i < size; i++)
 			{
