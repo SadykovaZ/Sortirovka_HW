@@ -32,7 +32,7 @@ start:
 
 		for (int i = 0; i < size; i++)
 		{
-			a[i] = -30 + rand() % 50;
+			a[i] = -20 + rand() % 50;
 			cout << a[i] << " ";
 		}
 		cout << endl;
@@ -76,9 +76,9 @@ start:
 					}
 				}
 			}
-			for (int i = part1; i < size / 2; i++)
+			for (int i = part1; i < size * 2 / 3; i++)
 			{
-				swap(a[i], a[size - i - 1]);
+				swap(a[i], a[size + part1 - i - 1]);
 			}
 
 			for (int i = 0; i < size; i++)
